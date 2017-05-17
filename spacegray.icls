@@ -1,18 +1,10 @@
-<scheme name="spacegray_expiaz" version="142" parent_scheme="Default">
-  <option name="FONT_SCALE" value="1.5" />
-  <metaInfo>
-    <property name="created">2017-01-31T14:56:35</property>
-    <property name="ide">PhpStorm</property>
-    <property name="ideVersion">2016.3.2.0.0</property>
-    <property name="modified">2017-05-17T13:29:18</property>
-    <property name="originalScheme">Spacegray expiaz</property>
-  </metaInfo>
+<scheme name="Spacegray" version="142" parent_scheme="Default">
   <option name="LINE_SPACING" value="1.5" />
-  <option name="EDITOR_FONT_SIZE" value="20" />
-  <option name="EDITOR_LIGATURES" value="true" />
-  <option name="CONSOLE_FONT_NAME" value="Inconsolata" />
-  <option name="CONSOLE_FONT_SIZE" value="16" />
-  <option name="EDITOR_FONT_NAME" value="Inconsolata" />
+  <option name="EDITOR_FONT_SIZE" value="16" />
+  <option name="CONSOLE_FONT_NAME" value="Source Code Pro" />
+  <option name="CONSOLE_FONT_SIZE" value="14" />
+  <option name="CONSOLE_LINE_SPACING" value="1.4" />
+  <option name="EDITOR_FONT_NAME" value="Source Code Pro" />
   <colors>
     <option name="ADDED_LINES_COLOR" value="414651" />
     <option name="CARET_COLOR" value="ffffff" />
@@ -50,11 +42,6 @@
         <option name="BACKGROUND" value="3a2323" />
       </value>
     </option>
-    <option name="CLASS_NAME_ATTRIBUTES">
-      <value>
-        <option name="FOREGROUND" value="ebcb8b" />
-      </value>
-    </option>
     <option name="CONSOLE_ERROR_OUTPUT">
       <value>
         <option name="FOREGROUND" value="ab7967" />
@@ -73,16 +60,6 @@
     <option name="CONSOLE_USER_INPUT">
       <value>
         <option name="FOREGROUND" value="a3be8c" />
-      </value>
-    </option>
-    <option name="CONSTRUCTOR_CALL_ATTRIBUTES">
-      <value>
-        <option name="FOREGROUND" value="84a8ff" />
-      </value>
-    </option>
-    <option name="CONSTRUCTOR_DECLARATION_ATTRIBUTES">
-      <value>
-        <option name="FOREGROUND" value="84a8ff" />
       </value>
     </option>
     <option name="CSS.COMMENT">
@@ -273,7 +250,7 @@
     </option>
     <option name="DEFAULT_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="8fb2d9" />
+        <option name="FOREGROUND" value="bf616a" />
       </value>
     </option>
     <option name="DEFAULT_PARENTHS">
@@ -305,11 +282,6 @@
     <option name="DEFAULT_TAG">
       <value>
         <option name="FOREGROUND" value="c0c5ce" />
-      </value>
-    </option>
-    <option name="DEFAULT_TEMPLATE_LANGUAGE_COLOR">
-      <value>
-        <option name="FOREGROUND" value="ffb62b" />
       </value>
     </option>
     <option name="DEFAULT_VALID_STRING_ESCAPE">
@@ -436,11 +408,6 @@
         <option name="BACKGROUND" value="3d4550" />
       </value>
     </option>
-    <option name="IMPLICIT_ANONYMOUS_CLASS_PARAMETER_ATTRIBUTES">
-      <value>
-        <option name="FOREGROUND" value="8fa1b3" />
-      </value>
-    </option>
     <option name="INFO_ATTRIBUTES">
       <value>
         <option name="EFFECT_COLOR" value="888888" />
@@ -453,22 +420,6 @@
         <option name="BACKGROUND" value="2b303b" />
       </value>
     </option>
-    <option name="INSTANCE_FIELD_ATTRIBUTES">
-      <value>
-        <option name="FOREGROUND" value="bf616a" />
-      </value>
-    </option>
-    <option name="INTERFACE_NAME_ATTRIBUTES">
-      <value>
-        <option name="FOREGROUND" value="ffffff" />
-      </value>
-    </option>
-    <option name="JS.BADCHARACTER">
-      <value>
-        <option name="EFFECT_COLOR" value="bf616a" />
-        <option name="EFFECT_TYPE" value="2" />
-      </value>
-    </option>
     <option name="JS.BLOCK_COMMENT">
       <value>
         <option name="FOREGROUND" value="65737e" />
@@ -479,34 +430,24 @@
         <option name="FOREGROUND" value="c0c5ce" />
       </value>
     </option>
-    <option name="JS.CLASS">
-      <value>
-        <option name="FOREGROUND" value="ffffff" />
-      </value>
-    </option>
     <option name="JS.DOC_COMMENT">
       <value>
         <option name="FOREGROUND" value="65737e" />
       </value>
     </option>
-    <option name="JS.FUNCTION_ARROW">
-      <value>
-        <option name="FOREGROUND" value="c0c5ce" />
-      </value>
-    </option>
     <option name="JS.GLOBAL_FUNCTION">
-      <value>
-        <option name="FOREGROUND" value="84a8ff" />
-      </value>
-    </option>
-    <option name="JS.GLOBAL_VARIABLE">
       <value>
         <option name="FOREGROUND" value="8fa1b3" />
       </value>
     </option>
+    <option name="JS.GLOBAL_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="b2b2" />
+      </value>
+    </option>
     <option name="JS.INSTANCE_MEMBER_FUNCTION">
       <value>
-        <option name="FOREGROUND" value="84a8ff" />
+        <option name="FOREGROUND" value="cbee59" />
       </value>
     </option>
     <option name="JS.INSTANCE_MEMBER_VARIABLE">
@@ -582,25 +523,10 @@
         <option name="FOREGROUND" value="ab7967" />
       </value>
     </option>
-    <option name="MAGIC_MEMBER_ACCESS">
-      <value>
-        <option name="FOREGROUND" value="96b5b4" />
-      </value>
-    </option>
     <option name="MATCHED_BRACE_ATTRIBUTES">
       <value>
         <option name="BACKGROUND" value="4c5472" />
         <option name="EFFECT_TYPE" value="2" />
-      </value>
-    </option>
-    <option name="METHOD_CALL_ATTRIBUTES">
-      <value>
-        <option name="FOREGROUND" value="84a8ff" />
-      </value>
-    </option>
-    <option name="METHOD_DECLARATION_ATTRIBUTES">
-      <value>
-        <option name="FOREGROUND" value="84a8ff" />
       </value>
     </option>
     <option name="PHP_BAD_CHARACTER">
@@ -718,7 +644,7 @@
     </option>
     <option name="PHP_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="8fb2d9" />
+        <option name="FOREGROUND" value="bf616a" />
       </value>
     </option>
     <option name="PHP_PREDEFINED SYMBOL">
@@ -760,35 +686,15 @@
         <option name="FOREGROUND" value="bf616a" />
       </value>
     </option>
-    <option name="PHP_VAR_VAR">
-      <value>
-        <option name="FOREGROUND" value="96b5b4" />
-      </value>
-    </option>
     <option name="REGEXP.INVALID_STRING_ESCAPE">
       <value>
         <option name="FOREGROUND" value="8000" />
       </value>
     </option>
-    <option name="SASS_FUNCTION">
-      <value>
-        <option name="FOREGROUND" value="84a8ff" />
-      </value>
-    </option>
-    <option name="SASS_KEYWORD">
-      <value>
-        <option name="FOREGROUND" value="b48ead" />
-        <option name="EFFECT_TYPE" value="1" />
-      </value>
-    </option>
-    <option name="SASS_MIXIN">
-      <value>
-        <option name="FOREGROUND" value="b48ead" />
-      </value>
-    </option>
     <option name="SASS_VARIABLE">
       <value>
-        <option name="FOREGROUND" value="bf616a" />
+        <option name="FOREGROUND" value="e45d60" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="SCOPE_KEY_ANM Install Profile">
@@ -851,16 +757,6 @@
         <option name="FOREGROUND" value="8fccff" />
       </value>
     </option>
-    <option name="STATIC_FIELD_ATTRIBUTES">
-      <value>
-        <option name="FOREGROUND" value="8fa1b3" />
-      </value>
-    </option>
-    <option name="STATIC_FINAL_FIELD_ATTRIBUTES">
-      <value>
-        <option name="FOREGROUND" value="8fa1b3" />
-      </value>
-    </option>
     <option name="TEMPLATE_VARIABLE_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="bf616a" />
@@ -889,11 +785,6 @@
     </option>
     <option name="TWIG_BACKGROUND">
       <value />
-    </option>
-    <option name="TYPE_PARAMETER_NAME_ATTRIBUTES">
-      <value>
-        <option name="FOREGROUND" value="8fa1b3" />
-      </value>
     </option>
     <option name="TYPO">
       <value>
