@@ -10,7 +10,7 @@ Spacegray (https://github.com/abhimanyu003/phpstorm-spacegray)
 Spacegray_Expiaz (for php/js/java)
 Oceanic Next (normally for Js)
 
-## Plugins:
+##Plugins:
 CodeGlance for minimap (https://plugins.jetbrains.com/plugin/7275-codeglance)
 
 ##Fonts:
