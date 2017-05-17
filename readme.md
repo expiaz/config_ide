@@ -1,6 +1,6 @@
 
 
-#Basic configuration for JetBrain IDEs :
+# Basic configuration for JetBrain IDEs :
 
 ## Theme :
 + Material (https://github.com/ChrisRM/material-theme-jetbrains)
