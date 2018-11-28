@@ -1,0 +1,321 @@
+{
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Operator Mono', Inconsolata, Consolas, 'Courier New', monospace",
+    "editor.fontWeight": "400",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 24,
+    "editor.tabSize": 4,
+    "editor.wordWrapColumn": 80,
+    "editor.wordWrap": "bounded",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+    "workbench.colorCustomizations": {
+        "sideBar.foreground": "#d4d4d4"
+    },
+    "editor.tokenColorCustomizations": {
+        "[Palenight Operator]": {
+            "textMateRules": [
+                // enable ligatures with custom CSS loader
+                // by selecting only items whose have
+                // these rules applied ('.mtkX')
+                {
+                    "scope": [
+                        "storage.type.function.arrow", // =>
+                        "keyword.operator.relational", // > < >= <=
+                        "keyword.operator.comparison", // === !==
+                    ],
+                    "settings": {
+                        "foreground": "#c792eb",
+                        "fontStyle": "italic"
+                    }
+                },
+
+                // function names in operator
+                {
+                    "scope": [
+                        "entity.name.function"
+                    ],
+                    "settings": {
+                        "fontStyle": "italic"
+                    }
+                },
+
+                // new, if, for ...
+                {
+                    "scope": [
+                        "keyword.operator",
+                        "constant.language.null",
+                        "constant.language.boolean", // null / boolean values
+                        "keyword.operator.logical.python"
+                    ],
+                    "settings": {
+                        "fontStyle": "italic",
+                        "foreground": "#c792ea"
+                    }
+                },
+
+                // object.property / domAPI.property
+                {
+                    "scope": [
+                        "variable.other.object.property.js",
+                        "variable.other.object.property.ts",
+                        "support.variable.property.dom",
+                        "variable.other.property.js",
+                        "variable.other.property.ts"
+                    ],
+                    "settings": {
+                        "foreground": "#bfc7d5"
+                    }
+                },
+
+                // TODO change, bcoz of font actually
+                {
+                    "scope": "meta.brace.square.js",
+                    "settings": {
+                        "fontStyle": "bold",
+                    }
+                },
+
+                // [ ( { ... })]
+                {
+                    "name": "Operator, Misc",
+                    "scope": [
+                        "constant.other.color",
+                        "punctuation",
+                        "meta.tag",
+                        "punctuation.definition.tag",
+                        "punctuation.separator.inheritance.php",
+                        "punctuation.definition.tag.html",
+                        "punctuation.definition.tag.begin.html",
+                        "punctuation.definition.tag.end.html",
+                        "punctuation.section.embedded",
+                        "keyword.other.template",
+                        "keyword.other.substitution"
+                    ],
+                    "settings": {
+                        "foreground": "#d4d4d4"
+                    }
+                },
+
+                // /*blah*/
+                {
+                    "name": "Comment",
+                    "scope": [
+                        "comment",
+                        "punctuation.definition.comment"
+                    ],
+                    "settings": {
+                        "fontStyle": "italic",
+                        "foreground": "#676E95"
+                    }
+                },
+
+                // function(parameter) {} definition
+                {
+                    "settings": {
+                        "foreground": "#8fb2d9" /*d3d0c8*/
+                    },
+                    "name": "Function parameters",
+                    "scope": "variable.parameter"
+                },
+
+                // function() call
+                {
+                    "scope": [
+                        "support.function.dom",
+                    ],
+                    "settings": {
+                        "foreground": "#82aaffff" /*d3d0c8*/
+                    },
+                },
+
+                // <div>
+                {
+                    "settings": {
+                        "foreground": "#c07a81"
+                    },
+                    "name": "Tags",
+                    "scope": "entity.name.tag"
+                },
+
+                // <div attr=""> / dom API
+                {
+                    "name": "Tag attribute",
+                    "scope": [
+                        "entity.other.attribute-name",
+                        "support.variable.dom.js"
+                    ],
+                    "settings": {
+                        "foreground": "#ffcc89"
+                    }
+                },
+
+
+                // object.property
+                {
+                    "name": "Object properties",
+                    "scope": [
+                        "variable.other.property",
+                        "variable.other.object.property"
+                    ],
+                    "settings": {
+                        "foreground": "#89DDFF"
+                    }
+                },
+
+                // const smth = 4; Math.PI ...
+                {
+                    "name": "Built-in constant",
+                    "scope": [
+                        "constant.language",
+                        "punctuation.definition.constant",
+                        "variable.other.constant",
+                        "support.constant"
+                    ],
+                    "settings": {
+                        "foreground": "#c07a81"
+                    }
+                },
+            ],
+        },
+        "[Spacegray Ocean Dark]": {
+            "variables": "#c58188",
+            "functions": "#84a8ff",
+            "comments": "#65737e",
+            "strings": "#a3be8c",
+            "types": "#ffcc66",
+            "keywords": "#b48ead",
+            "numbers": "#d08770",
+            "textMateRules": [
+                // operators
+                {
+                    "scope": [
+                        "keyword.operator.new",
+                        "keyword.operator.expression",
+                        "keyword.operator.cast",
+                        "keyword.operator.sizeof",
+                        "keyword.operator.instanceof",
+                        "keyword.operator.typeof",
+                        "variable.language.this", // 'this'
+                        "constant.language", // null / boolean values
+                        "keyword.operator.logical.python"
+                    ],
+                    "settings": {
+                        "foreground": "#b48ead"
+                    }
+                },
+
+                // html tags
+                {
+                    "settings": {
+                        "foreground": "#c07a81"
+                    },
+                    "name": "Tags",
+                    "scope": "entity.name.tag"
+                },
+                // <> brackets
+                {
+                    "name": "brackets of XML/HTML tags",
+                    "scope": "punctuation.definition.tag",
+                    "settings": {
+                        "foreground": "#808080"
+                    }
+                },
+
+                // bracket and parenthesis colors
+                {
+                    "scope": "meta.embedded",
+                    "settings": {
+                        "foreground": "#d4d4d4"
+                    }
+                },
+
+                // `template literals ${javascript} ending & start tags` 
+                {
+                    "name": "String interpolation",
+                    "scope": [
+                        "punctuation.definition.template-expression.begin",
+                        "punctuation.definition.template-expression.end",
+                        "punctuation.section.embedded"
+                    ],
+                    "settings": {
+                        "foreground": "#b48ead"
+                    }
+                },
+                
+                /*
+                // to avoid having string colored namespaced variables
+                // e.g. namespace.variable
+                {
+                    "name": "Variable and parameter name",
+                    "scope": [
+                        "variable",
+                        "variable.other.object", // object e.g. {a: b}
+                        "meta.definition.variable.name",
+                        "support.variable",
+                        "entity.name.variable"
+                    ],
+                    "settings": {
+                        "foreground": "#c2848a"
+                    }
+                },
+                */
+
+                // objects
+                {
+                    "settings": {
+                        "foreground": "#e2c399"
+                    },
+                    "name": "Object variable property access",
+                    "scope": [
+                        "meta.object-literal.key", // var object member declaration
+                        "variable.other.property", // var object property
+                        "support.variable.property.dom" // dom values e.g. nodeName
+                    ]
+                    
+                },
+
+                // functions
+                {
+                    "settings": {
+                        "foreground": "#84a8ff" /*6699cc*/
+                    },
+                    "name": "Functions",
+                    "scope": [
+                        "entity.name.function",
+                        "meta.require", 
+                        "support.function.any-method",
+                        "keyword.other.special-method"
+                    ]
+                },
+
+                // function parameters
+                {
+                    "settings": {
+                        "foreground": "#8fb2d9" /*d3d0c8*/
+                    },
+                    "name": "Text",
+                    "scope": "variable.parameter"
+                }
+            ]
+        }
+    },
+
+    "lit-html.tags": [
+        "${[^}]+}"
+    ],
+    "workbench.colorTheme": "Palenight Operator",
+    "workbench.iconTheme": "material-icon-theme",
+    "vscode_custom_css.imports": [
+        "file://C:/Users/expiaz/.vscode/styles.css"
+    ],
+    "material-icon-theme.folders.color": "#ffffff",
+    "materialTheme.autoApplyIcons": true,
+    "materialTheme.accent": "Remove accents"
+}
