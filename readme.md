@@ -71,3 +71,12 @@
 ## Example :
 
 ![Rendering](./vscode/assets/screen.png)
+
+# Operator Mono Lig
+
+1. Get [Operator](https://www.typography.com/fonts/operator/styles/operatormonoscreensmart)
+2. Get [Operator Mono Lig](https://github.com/kiliman/operator-mono-lig)
+3. Install `Operator Mono Lig Book` / `Operator Mono Lig Book Light`
+4. `Ctrl + Shift + P` search `settings` and edit `settings.json`
+5. Change font family to `Operator Mono Lig Light` on Windows (names differs because of a bug) and `Operator Mono Book Light` on Linux/Mac
+6. If you want, you can use the predefined settings for `Operator Mono Lig` from [settings.json](./vscode/operator.lig.json)
