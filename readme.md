@@ -40,8 +40,9 @@
 + [Operator](https://www.typography.com/fonts/operator/styles/operatormonoscreensmart)
 
 ## Extensions :
-+ [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) for multiples fonts
 + [lit-html](https://marketplace.visualstudio.com/items?itemName=bierner.lit-html) for html templates highlight
+_(deprecated)_
++ [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) for multiples fonts 
 
 ## Edition :
 + Extract colors of a theme by `Ctrl + Shift + P` search `Developer : Generate Color Theme`
@@ -55,6 +56,8 @@
 + Reset `accent color` if doesn't apply
 + Install `Material Palenight` then `Ctrl + Shift + p` search `Preference Color Theme` and choose `Palenight Operator`
 + Add custom color scheme in `settings.json` under `[Palenight Operator]`
+
+_deprecated_
 + Install `Custom CSS and JS Loader` and add `vscode_custom_css.imports` css file path in `settings.json` (file://C:/...)
 + Create CSS file and add this rule :
 ```css

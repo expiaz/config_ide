@@ -1,7 +1,7 @@
 {
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'Operator Mono', Inconsolata, Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'Operator Mono Lig Light', Inconsolata, 'Fira Mono Medium', Consolas, 'Courier New', monospace",
+    "breadcrumbs.enabled": true,
     "editor.fontWeight": "400",
     "editor.fontSize": 16,
     "editor.lineHeight": 24,
@@ -19,8 +19,62 @@
         "sideBar.foreground": "#d4d4d4"
     },
     "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "keyword.control",
+                    "constant.language.null",
+                    "constant.language.boolean", // null / boolean values
+                    "variable.language", // this
+                    "storage.type", // class, const, let, var
+                    "meta.method.declaration storage.type.js", // constructor
+                ],
+                "settings": {
+                    "fontStyle": "italic",
+                    "foreground": "#569cd6ff"
+                }
+            },
+
+            // <div>
+            {
+                "name": "Tags",
+                "scope": "entity.name.tag",
+                "settings": {
+                    "fontStyle": ""
+                }
+            },
+
+            // <div attr=""> / dom API
+            {
+                "name": "Tag attribute",
+                "scope": [
+                    "entity.other.attribute-name",
+                    "support.variable.dom.js"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+        ],
         "[Palenight Operator]": {
             "textMateRules": [
+
+                /**
+                * C
+                */
+
+                {
+                    "name": "C function call parameters",
+                    "scope": "meta.function-call.c",
+                    "settings": {
+                        "foreground": "#d4d4d4"
+                    }
+                },
+
+                /**
+                * JS
+                */
+
                 // enable ligatures with custom CSS loader
                 // by selecting only items whose have
                 // these rules applied ('.mtkX')
@@ -31,27 +85,21 @@
                         "keyword.operator.comparison", // === !==
                     ],
                     "settings": {
-                        "foreground": "#c792eb",
-                        "fontStyle": "italic"
-                    }
-                },
-
-                // function names in operator
-                {
-                    "scope": [
-                        "entity.name.function"
-                    ],
-                    "settings": {
-                        "fontStyle": "italic"
+                        "foreground": "#c792ea", // c792eb
+                        "fontStyle": ""
                     }
                 },
 
                 // new, if, for ...
                 {
                     "scope": [
+                        "keyword.control",
                         "keyword.operator",
                         "constant.language.null",
                         "constant.language.boolean", // null / boolean values
+                        "variable.language", // this
+                        "storage.type", // class, const, let, var
+                        "meta.method.declaration storage.type.js", // constructor
                         "keyword.operator.logical.python"
                     ],
                     "settings": {
@@ -67,20 +115,22 @@
                         "variable.other.object.property.ts",
                         "support.variable.property.dom",
                         "variable.other.property.js",
-                        "variable.other.property.ts"
+                        "variable.other.property.ts",
+                        "variable.other.object.js"
                     ],
                     "settings": {
                         "foreground": "#bfc7d5"
                     }
                 },
 
-                // TODO change, bcoz of font actually
+                /* TODO change, bcoz of font actually
                 {
                     "scope": "meta.brace.square.js",
                     "settings": {
                         "fontStyle": "bold",
                     }
                 },
+                */
 
                 // [ ( { ... })]
                 {
@@ -116,29 +166,76 @@
                     }
                 },
 
-                // function(parameter) {} definition
-                {
-                    "settings": {
-                        "foreground": "#8fb2d9" /*d3d0c8*/
-                    },
-                    "name": "Function parameters",
-                    "scope": "variable.parameter"
-                },
-
-                // function() call
+                // function names
                 {
                     "scope": [
-                        "support.function.dom",
+                        "entity.name.function.ts",
+                        "entity.name.function.js",
                     ],
                     "settings": {
-                        "foreground": "#82aaffff" /*d3d0c8*/
-                    },
+                        "fontStyle": ""
+                    }
+                },
+
+                // function(parameter) {} definition
+                {
+                    "name": "Function parameters",
+                    "scope": "variable.parameter",
+                    "settings": {
+                        "foreground": "#8fb2d9", // d3d0c8
+                        "fontStyle": ""
+                    }
+                },
+
+                // dom/JS API function()
+                {
+                    "name": "builtin functions / variables",
+                    "scope": [
+                        "support.function",
+                        "support.variable.property",
+                    ],
+                    "settings": {
+                        "foreground": "#82AAFF",
+                        //"fontStyle": "italic"
+                    }
+                },
+
+                // {object: key}
+                {
+                    "name": "object keys",
+                    "scope": [
+                        "meta.object-literal.key"
+                    ],
+                    "settings": {
+                        "fontStyle": "italic"
+                    }
+                },
+
+                // `template ${content}`
+                {
+                    "name": "object keys",
+                    "scope": [
+                        "meta.template.expression.ts",
+                        "string"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                
+                // regex
+                {
+                    "scope": "string.regexp",
+                    "settings": {
+                        "fontStyle": ""
+                    }
                 },
 
                 // <div>
                 {
                     "settings": {
-                        "foreground": "#c07a81"
+                        "foreground": "#c07a81",
+                        "fontStyle": ""
                     },
                     "name": "Tags",
                     "scope": "entity.name.tag"
@@ -152,7 +249,8 @@
                         "support.variable.dom.js"
                     ],
                     "settings": {
-                        "foreground": "#ffcc89"
+                        "foreground": "#ffcc89",
+                        "fontStyle": "italic"
                     }
                 },
 
@@ -183,139 +281,18 @@
                     }
                 },
             ],
-        },
-        "[Spacegray Ocean Dark]": {
-            "variables": "#c58188",
-            "functions": "#84a8ff",
-            "comments": "#65737e",
-            "strings": "#a3be8c",
-            "types": "#ffcc66",
-            "keywords": "#b48ead",
-            "numbers": "#d08770",
-            "textMateRules": [
-                // operators
-                {
-                    "scope": [
-                        "keyword.operator.new",
-                        "keyword.operator.expression",
-                        "keyword.operator.cast",
-                        "keyword.operator.sizeof",
-                        "keyword.operator.instanceof",
-                        "keyword.operator.typeof",
-                        "variable.language.this", // 'this'
-                        "constant.language", // null / boolean values
-                        "keyword.operator.logical.python"
-                    ],
-                    "settings": {
-                        "foreground": "#b48ead"
-                    }
-                },
-
-                // html tags
-                {
-                    "settings": {
-                        "foreground": "#c07a81"
-                    },
-                    "name": "Tags",
-                    "scope": "entity.name.tag"
-                },
-                // <> brackets
-                {
-                    "name": "brackets of XML/HTML tags",
-                    "scope": "punctuation.definition.tag",
-                    "settings": {
-                        "foreground": "#808080"
-                    }
-                },
-
-                // bracket and parenthesis colors
-                {
-                    "scope": "meta.embedded",
-                    "settings": {
-                        "foreground": "#d4d4d4"
-                    }
-                },
-
-                // `template literals ${javascript} ending & start tags` 
-                {
-                    "name": "String interpolation",
-                    "scope": [
-                        "punctuation.definition.template-expression.begin",
-                        "punctuation.definition.template-expression.end",
-                        "punctuation.section.embedded"
-                    ],
-                    "settings": {
-                        "foreground": "#b48ead"
-                    }
-                },
-                
-                /*
-                // to avoid having string colored namespaced variables
-                // e.g. namespace.variable
-                {
-                    "name": "Variable and parameter name",
-                    "scope": [
-                        "variable",
-                        "variable.other.object", // object e.g. {a: b}
-                        "meta.definition.variable.name",
-                        "support.variable",
-                        "entity.name.variable"
-                    ],
-                    "settings": {
-                        "foreground": "#c2848a"
-                    }
-                },
-                */
-
-                // objects
-                {
-                    "settings": {
-                        "foreground": "#e2c399"
-                    },
-                    "name": "Object variable property access",
-                    "scope": [
-                        "meta.object-literal.key", // var object member declaration
-                        "variable.other.property", // var object property
-                        "support.variable.property.dom" // dom values e.g. nodeName
-                    ]
-                    
-                },
-
-                // functions
-                {
-                    "settings": {
-                        "foreground": "#84a8ff" /*6699cc*/
-                    },
-                    "name": "Functions",
-                    "scope": [
-                        "entity.name.function",
-                        "meta.require", 
-                        "support.function.any-method",
-                        "keyword.other.special-method"
-                    ]
-                },
-
-                // function parameters
-                {
-                    "settings": {
-                        "foreground": "#8fb2d9" /*d3d0c8*/
-                    },
-                    "name": "Text",
-                    "scope": "variable.parameter"
-                }
-            ]
         }
     },
 
     "lit-html.tags": [
-        "${[^}]+}"
+        "htmx",
+        "jsx"
     ],
     "workbench.colorTheme": "Palenight Operator",
     "workbench.iconTheme": "material-icon-theme",
-    "vscode_custom_css.imports": [
-        "file://C:/Users/expiaz/.vscode/styles.css"
-    ],
     "material-icon-theme.folders.color": "#ffffff",
+    /*
     "materialTheme.autoApplyIcons": true,
-    "materialTheme.accent": "Remove accents"
+    "materialTheme.accent": "Remove accents",
+    */
 }
